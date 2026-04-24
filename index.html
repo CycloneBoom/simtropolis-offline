@@ -5,6 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="robots" content="noindex, nofollow">
 	<link rel="icon" type="image/x-icon" href="https://offline.simtropolis.com/images/favicon.ico"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<style>
 		body {
 			background: white;
@@ -113,8 +116,6 @@
 </head>
 <body>
 
-<div style="display:none;">::CLOUDFLARE_ERROR_500S_BOX::</div>
-
 <div class="header-banner">
 	<img src="https://offline.simtropolis.com/images/st-logo.png" alt="Simtropolis" style="width:251px; height:134px;"/>
 </div>
@@ -170,26 +171,7 @@
 </div>
 
 <script>
-// Import Roboto font from Google
 (function () {
-	const head = document.head;
-
-	const preconnect1 = document.createElement("link");
-	preconnect1.rel = "preconnect";
-	preconnect1.href = "https://fonts.googleapis.com";
-	head.appendChild(preconnect1);
-
-	const preconnect2 = document.createElement("link");
-	preconnect2.rel = "preconnect";
-	preconnect2.href = "https://fonts.gstatic.com";
-	preconnect2.crossOrigin = "";
-	head.appendChild(preconnect2);
-
-	const fontLink = document.createElement("link");
-	fontLink.rel = "stylesheet";
-	fontLink.href = "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap";
-	head.appendChild(fontLink);
-
 	const container = document.getElementById("main-container");
 	requestAnimationFrame(function () {
 		requestAnimationFrame(function () {
